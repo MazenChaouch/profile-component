@@ -1,0 +1,14 @@
+body {
+  background-color: #858585;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.app {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
