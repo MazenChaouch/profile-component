@@ -1,33 +1,15 @@
-import { Profile } from "./components/profile"
-import profile1 from "./assets/profile1.jpg"
-import profile2 from "./assets/profile2.jpg"
-import profile3 from "./assets/profile3.jpg"
-import "./app.css"
-const App = () => {
-    const profiles = [
-        {
-            name: "Mazen Chaouch",
-            location: "Tunis, Tunisia",
-            img: profile1
-        },
-        {
-            name: "Sarah Ben Ali",
-            location: "Sfax, Tunisia",
-            img: profile2
-        },
-        {
-            name: "Youssef Hammami",
-            location: "Sousse, Tunisia",
-            img: profile3
-        }
-    ];
-    return (
-        <div className="app">
-            {profiles.map((profile, index) => {
-                return <Profile key={index} name={profile.name} address={profile.location} avatar={profile.img} />
-            })}
-        </div>
-    )
-}
+import { ProfileList } from "./components/ProfileList";
+import "./app.css";
+import { Counter } from "./components/counter";
 
-export default App
+const App = () => {
+    return (
+        <div className="App m-6">
+            <h1 className="text-5xl text-sky-600 text-center font-bold my-8">Title</h1>
+            <ProfileList />
+            <Counter />
+        </div>
+    );
+};
+
+export default App;
